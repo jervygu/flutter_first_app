@@ -8,7 +8,14 @@ class GradientContainer extends StatelessWidget {
   // initialization work
   const GradientContainer({super.key, required this.colors});
 
+  // alternative constructor function sample
+  // const GradientContainer.puple({super.key})
+  //     : colors.first = Colors.deepPurple,
+  //       colors.last = Colors.black;
+
   final List<Color> colors;
+
+  void rollDice() {}
 
   @override
   Widget build(context) {
@@ -20,8 +27,27 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: const Center(
-        child: StyledText('Hello Jervy!'),
+      child: Center(
+        child: Column(
+          children: [
+            Image.asset(
+              'assets/images/dice-2.png',
+              width: 200,
+            ),
+            // ElevatedButton(
+            //   onPressed: () {},
+            //   child: const Text('Roll dice'),
+            // ),
+            // OutlinedButton(
+            //   onPressed: () {},
+            //   child: const Text('Roll dice'),
+            // )
+            TextButton(
+              onPressed: rollDice,
+              child: const Text('Roll dice'),
+            ),
+          ],
+        ),
       ),
     );
   }
