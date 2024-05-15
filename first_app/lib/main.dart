@@ -8,7 +8,11 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.deepPurple,
         body: GradientContainer(
-          colors: [Colors.deepPurple, Colors.black, Colors.amber],
+          colors: [
+            Colors.deepPurple,
+            Colors.black,
+            Colors.amber,
+          ],
         ),
       ),
     ),
