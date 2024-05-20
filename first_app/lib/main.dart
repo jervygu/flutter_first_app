@@ -1,22 +1,28 @@
 import 'package:flutter/material.dart';
+// import 'package:first_app/gradient_container.dart';
+import 'package:first_app/apps/home.dart';
 
-import 'package:first_app/gradient_container.dart';
+// void main() {
+//   runApp(
+//     const MaterialApp(
+//       home: Scaffold(
+//         backgroundColor: Colors.deepPurple,
+//         body: GradientContainer(
+//           colors: [
+//             Colors.deepPurple,
+//             Colors.black,
+//             Colors.amber,
+//           ],
+//         ),
+//       ),
+//     ),
+//   );
+// }
 
 void main() {
-  runApp(
-    const MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.deepPurple,
-        body: GradientContainer(
-          colors: [
-            Colors.deepPurple,
-            Colors.black,
-            Colors.amber,
-          ],
-        ),
-      ),
-    ),
-  );
+  runApp(const MaterialApp(
+    home: Wisdom(),
+  ));
 }
 
 
